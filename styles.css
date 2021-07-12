@@ -1,0 +1,1015 @@
+/*text
+style.css
+---------
+Par Stephane-OC
+*/
+
+/* Fonts */
+
+@font-face{                                                    
+    font-family: "Raleway-Regular"; 
+    src: url("fonts/Raleway-Regular.ttf") format("truetype");
+}
+@font-face{ 
+    font-family: "Raleway-ExtraBold";
+    src: url("fonts/Raleway-ExtraBold.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Raleway-ExtraBoldItalic";
+    src: url("fonts/Raleway-ExtraBoldItalic.ttf") format("truetype");
+}
+@font-face{  
+    font-family: "Raleway-Light";
+    src: url("fonts/Raleway-Light.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Raleway-VariableFont_wght";
+    src: url("fonts/Raleway-VariableFont_wght.ttf") format("truetype"); 
+}
+@font-face{
+    font-family: "Raleway-Medium"; 
+    src: url("fonts/Raleway-Medium.ttf") format("truetype"); 
+}
+@font-face{
+    font-family: "Raleway-ExtraLight"; 
+    src: url("fonts/Raleway-ExtraLight.ttf") format("truetype");
+}
+@font-face{ 
+    font-family: "Raleway-Bold"; 
+    src: url("fonts/Raleway-Bold.ttf") format("truetype");                                                               
+}
+
+
+body
+{
+    font-family: "Raleway-regular", Arial, Verdana, sans-serif; /* Font style off all the page*/
+    font-size: 100%;
+}
+
+/*****************************************Header logo & navigation*****************************************/
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'raleway';
+    text-decoration: none;
+}
+
+.logo
+{
+    display: flex;
+    margin-right: auto;
+    width: 120px;
+    margin: 20px 40px;
+}
+
+
+header a
+{
+    text-decoration: none;
+    color: black;
+    padding: 45px 20px;
+}
+
+.nav
+{
+    display: flex;
+}
+
+.navrent
+{
+    font-family: "raleway-regular", Arial, Verdana, sans-serif;
+    font-size: 1.2em;
+    margin: 40px 10px 40px 10px;
+    padding: 20px -12px;
+    font-weight: bolder;
+}
+
+.navactivities
+{
+    font-family: "raleway-regular", Arial, Verdana, sans-serif;
+    font-size: 1.2em;
+    margin: 40px 10px 40px 10px;
+    padding: 20px -12px;
+    font-weight: bolder;
+}
+
+.navsubscribe
+{
+    font-family: "raleway-regular", Arial, Verdana, sans-serif;
+    font-size: 1.2em;
+    margin: 40px 10px 40px 10px;
+    padding: 20px -12px;
+    font-weight: bold;
+    color: #0065FC;
+}
+
+.blue
+{
+    color: #0065FC;
+}
+
+.navrent a:hover /**** When i pass over the "Hébergement" link ****/
+{
+    border-top: 2.5px solid;
+    color: #0065FC;
+}
+
+.navactivities a:hover /**** When i pass over the "Activitées" link ****/
+{
+    border-top: 2.5px solid;
+    color: #0065FC;
+}
+
+.navsubscribe a:hover /**** When i pass over the "S'incrire" link ****/
+{
+    font-family: 'raleway-extrabold';
+}
+
+
+/***************************************** End Header logo & navigation *****************************************/
+
+/* Title and research*/
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#mainh1
+{
+    font-family: "raleway-regular", Arial, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 1.6em;
+    margin-left: 40px;
+    margin-bottom: -5px;
+}
+
+#mainh2
+{
+    font-family: "raleway-light", Arial, Verdana, sans-serif;
+    font-size: 1.0em;
+    margin: 15px 0px 20px 40px;
+
+
+}
+
+.filter_h2
+{
+    font-family: "raleway-bold", Arial, Verdana, sans-serif;
+    margin-left: 40px;
+    font-size: 1.3rem;
+}
+
+.filters
+{
+    font-family: "raleway-regular", Arial, Verdana, sans-serif;
+    margin-left: 40px;
+}
+
+.logement_h5
+{
+    font-family: "raleway-regular", Arial, Verdana, sans-serif;
+    margin-left: 40px;
+}
+
+/***************************************** Searh bar *****************************************/
+.researh
+{
+    display: flex;
+    margin-left: 40px ;
+}
+
+.marker
+{
+    font-family: "raleway-regular", Arial, Verdana, sans-serif;
+    display: flex;   
+    background-color:#F2F2F2;
+    justify-content: center; 
+    align-items: center;
+    width: 65px;
+    min-width: 30px;
+    height: 50px; 
+    border-radius: 20px 0 0 20px;
+}
+
+
+.input
+{
+    border: none;
+    border-top: solid #F2F2F2 1px;
+    border-bottom: solid #F2F2F2 1px;
+    font-family: "raleway-Bold", Arial, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    padding-left: 1em;
+}
+
+::placeholder
+{
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    color: black;
+    opacity: 0.8;
+    padding-left: 0.1em;
+    padding-right: 1.2em;
+}
+
+.submit
+{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: #F2F2F2;
+    background-color: #0065FC;
+    color: white;
+    font-family: "raleway-bold", Arial, Verdana, sans-serif;;
+    font-size: 1.2rem;
+    padding: 10px 15px 10px 15px;
+    border-width: 0.2px;
+}
+
+.submit:hover
+{
+    background-color: #60B4E4;
+}
+
+input:focus
+{
+    outline: none;
+}
+
+/***************************************** Filters *****************************************/
+.filters
+{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.buttons_h2
+{
+    font-family: "raleway-regular", Arial, Verdana, sans-serif;
+    font-size: 1.4em;
+    margin-left: 40px;
+    margin-top: 1.8em;
+    font-weight: bold;
+}
+
+.buttons_text
+{
+    margin-top: 0.7em;
+    margin-left: 0.3em;
+    font-size: 1.2em;
+
+}
+
+.button
+{
+
+    display: flex;
+    background-color:#F2F2F2;
+    justify-content: center; 
+    align-items: center;
+    background-color: #DEEBFF;
+    color:  #0065FC;
+    font-size: 1.2em;
+    width: 50px;
+    height: 50px; 
+    border-radius: 100%;
+}
+
+
+
+.action-button
+{
+    display: flex;
+    
+    flex-wrap: wrap;
+    width: auto;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-right: 20px;
+    border-radius:40px;
+    font-family: "raleway-regular", Arial, Verdana, sans-serif;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    border: 2px solid #F2F2F2;
+    transition: all 0.8s;
+    -webkit-transition: all 0.1s;
+}
+
+
+
+.action-button:hover
+{
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid #DEEBFF;
+    background-color: #F2F2F2;
+}
+
+/***************************************** I Title *****************************************/
+.h5_symbol
+{
+    display: flex;
+    margin-left: 40px;
+
+}
+
+.h5_symbol h5
+ {
+
+    display: flex;
+    align-items: center;
+    font-family: "Raleway-ExtraLight", Arial, Verdana, sans-serif; 
+    font-size: 1rem;
+ }
+
+.h5_symbol i
+{
+    display: flex;
+    color: #0065FC;
+    border:#F2F2F2 solid 2px;
+    width: 25px; 
+    height: 25px;
+    margin-top: 1.9em;
+    margin-right: 0.2em;
+    border-radius: 50%; 
+    justify-content: center; 
+    align-items: center;
+ 
+
+}
+
+
+
+
+
+/***************************************** Body *****************************************/
+
+/******************* Contener 1 with 2 boxes*******************/
+.conteneur
+{
+
+    display: flex;
+    margin: 40px;
+}
+
+/******************* Box "Hébergement Marseille *******************/
+
+.surround_box
+{
+    height: 740px;
+    width: 75%;
+    background-color: #F2F2F2;
+    margin-right: 40px;
+    border-radius: 20px;
+    padding: 20px 40px 50px 40px; 
+    
+}
+
+.box1
+{
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 720px;
+    width: 100%;
+}
+
+.rent_h3
+{
+    font-family: "raleway-bold", Arial, Verdana, sans-serif;
+    font-size: 1.3em;
+}
+
+
+
+div.figure1
+{
+    height: 40%;
+    width: 30%;
+    background-color: white;
+    box-shadow: 0px 0px 5px grey;
+    border-radius: 20px;
+    margin: 0.3em;
+    padding: 0.3em;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.pic1
+{
+    height: 190px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: -1em;
+    margin-bottom: -5em;
+    object-fit: cover;
+
+}
+
+.subtitles
+{
+
+    margin-left: 0.8em;
+    margin-top: 4.8em;
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+.subtitles2
+{
+    
+    margin-left: 0.9em;
+    margin-top: -0.5em;
+
+
+}
+
+.stars
+{
+    margin-top: -0.5em;
+    margin-left: 0.8em;
+    color: rgb(217,217,217);
+    
+}
+
+
+/******************* Box "The most populary" *******************/
+
+.surround_box2
+{
+    height: 740px;
+    width: 25%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 20px 40px 50px 40px;
+    font-family: "Raleway-regular", Arial, Verdana, sans-serif;
+}
+
+.box2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    height: 700px;
+    width: 100%;
+
+
+}
+
+.h3_populary
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
+    font-size: 1.2em;
+}
+
+.h3_populary i 
+{
+    font-size: 1.3em;
+}
+
+.more
+{
+    font-size: 1.2em;
+    font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
+}
+
+div.figure2
+{
+    height: 24%;
+    width: 98%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: #F2F2F2;
+    overflow: cover;
+    overflow: hidden;
+    margin: 0.3em;
+    padding: 0.3em;
+}
+
+.pics2
+{
+    height: 170px;
+    width: 45%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: -1em;
+    margin-bottom: -1em;
+    padding-bottom: -5em;
+    padding-right: -20em;
+
+}
+
+
+.subtitles3
+{
+
+    margin-left: 11em;
+    margin-top: -9em;
+    margin-right: 2em;
+    font-size: 1.1em;
+    font-weight: bolder;
+    font-family: "Raleway-Regular", Arial, Verdana, sans-serif;
+}
+
+.subtitles4
+{
+    
+    margin-left: 12em;
+    margin-top: -1em;
+    font-family: "Raleway-Regular", Arial, Verdana, sans-serif;
+
+}
+
+.stars2
+{
+    margin-top: 1em;
+    margin-left: 12em;
+    color: rgb(217,217,217);
+}
+
+/******************* Contener 2 with 1 box *******************/
+
+.conteneur2
+{   
+    margin: 40px;
+    display: flex;
+}
+
+.surround_box3
+{
+    height: 600px;
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+/******************* Box activities *******************/
+
+.box3
+{
+    height: 560px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+}
+
+.h3_activities
+{
+    font-size: 1.3em;
+    font-family: "Raleway-bold", Arial, Verdana, sans-serif;
+}
+/******************* Box 3 Photo 1 *******************/
+
+div.figure3
+{
+    height: 90%;
+    width: 20%;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    padding-bottom: 5em;
+    box-shadow: 0px 0px 5px grey;
+
+}
+
+.pics3
+{
+    height: 600px;
+    width: auto;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: -7em;
+    object-fit: cover;
+
+}
+
+.sub_activities1
+{
+
+    margin-left: 1em;
+    margin-top: -0.5em;
+    font-weight: bold;
+}
+
+.h2_activities
+{
+    padding-left: 40px;
+    font-family: "raleway-bold", Arial, Verdana, sans-serif;
+}
+
+
+
+/******************* Box 3 Photo 2 *******************/
+
+div.figure4
+{
+    height: 55%;
+    width: 20%;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 28px;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.pics4
+{
+    height: 260px;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: -1.6em;
+    object-fit: cover;
+
+}
+
+/******************* Box 3 Photo 3 *******************/
+
+div.figure5
+{
+    height: 40%;
+    width: 20%;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px grey;
+
+}
+
+.pics5
+{
+    height: 250px;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: -6em;
+    object-fit: cover;
+}
+
+/******************* Box 3 Photo 4 *******************/
+
+div.figure6
+{
+    height: 100%;
+    width: 20%;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px grey;
+
+
+}
+
+.pics6
+{
+    height: 600px;
+
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: -7em;
+    object-fit: cover;
+}
+
+
+
+/******************* Box 3 Photo 5 *******************/
+
+div.figure7
+{
+    height: 40%;
+    width: 20%;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 55px;
+    box-shadow: 0px 0px 5px grey;
+
+
+}
+
+.pics7
+{
+    height: 220px;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    object-fit: cover;
+    margin-top: -3.8em;
+}
+
+/******************* Box 3 Photo 6 *******************/
+
+div.figure8
+{
+    height: 50%;
+    width: 20%;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px grey;
+
+
+
+}
+.pics8
+{
+    height: 300px;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    object-fit: cover;
+    margin-top: -5.8em;
+}
+
+
+
+
+
+
+/***************************************** Footer opening *****************************************/
+
+.footer_reservia
+{
+    display: flex;
+    font-family: "Raleway-Regular", Arial, Verdana, sans-serif;
+    background-color:#F2F2F2; /* Background grey */
+    color: black; /* Footer text black */
+    text-decoration: none;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+
+.footer_reservia ul
+{
+    
+    padding-left: 0px; /*menu in left line with its title*/
+    margin-bottom: 2px;
+    margin-top: 20px;
+}
+
+.footer_reservia li
+{
+    list-style: none; /*to erase the default list style*/
+    text-decoration:none; 
+    line-height: 25px; 
+}
+
+a
+{
+    text-decoration: none; /*to erase the default style of text*/
+    color: Black; 
+
+}
+
+/******************* 3 catégories in my flexbox who are share the same space *******************/
+
+.about
+{
+    width: 33.33%;
+    margin-top: 15px;
+}
+
+
+.about_h5
+{
+    font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+
+.hebergements
+{
+    width: 33.33%;
+    margin-top: 15px;
+}
+
+.hebergements_h5
+{
+    font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+
+.help
+{
+    width: 33.33%;
+    margin-top: 15px;
+}
+
+.help_h5
+{
+    font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+
+/***************************************** Responsive, tablet mode *****************************************/
+
+
+@media all and (max-width: 1080px){
+
+
+
+   /***************************************** Container 1 *****************************************/
+
+
+.conteneur
+{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+
+}
+
+.surround_box:nth-child(1)
+{
+    order: 2;
+}
+
+.surround_box:nth-child(2)
+{
+    order: (1);
+}
+
+
+   /***************************************** Hébergements *****************************************/
+.surround_box
+{
+    height: 600px;
+    width: 90%;
+    background-color: #F2F2F2;
+    padding-top: -20rem;
+    border-radius: 20px; 
+}
+
+.box1
+{
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 400px;
+    padding-top: -10px;
+}
+
+div.figure1
+{
+    height: 60%;
+    width: 30%;
+    background-color: white;
+    box-shadow: 0px 0px 5px grey;
+    border-radius: 20px;
+    margin: 0.3em;
+    padding: 0.3em;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.pic1
+{
+    height: 170px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: -1em;
+    margin-bottom: -6em;
+    object-fit: cover;
+
+}
+
+
+.subtitles
+{
+
+    margin-left: 0.6em;
+    margin-top: 6.9em;
+    font-size: 0.9em;
+    font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
+}
+
+.subtitles2
+{
+    font-size: 0.9em;
+    margin-left: 0.6em;
+    margin-top: -0.5em;
+
+}
+
+.stars
+{
+    font-size: 0.9em;
+    margin-top: -0.7em;
+    margin-left: 0.6em;
+    color: rgb(217,217,217);
+    
+}
+
+
+
+   /***************************************** Most polulary *****************************************/
+.surround_box2
+{
+    height: 200px;
+    width: 90%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding-top: -30em;
+    padding-left: -20px;
+    margin-bottom: 20px;
+
+    font-family: "Raleway-regular", Arial, Verdana, sans-serif;
+}
+
+.box2
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    height: 80%;
+    width: auto;
+    padding-top: -20px;
+    margin-left: -2em;
+    margin-right: 0.8em;
+ 
+}
+
+
+div.figure2
+{
+    height: 80%;
+    width: 33%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: #F2F2F2;
+    overflow: cover;
+    overflow: hidden;
+    margin: 0.3em;
+    padding-top: -2em;
+    padding-bottom: 1em;
+    overflow: hidden;
+}
+
+.pics2
+{
+    height: 140px;
+    width: 45%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: cover;
+}
+
+.subtitles3
+{
+    margin-left: 9.6em;
+    margin-right: 1em;
+    margin-top: -8.4em;
+    font-size: 0.9em;
+    font-family: "Raleway-bold", Arial, Verdana, sans-serif;
+}
+
+.subtitles4
+{
+    margin-left: 9.6em;
+
+    margin-top: -1.6em;
+    font-size: 0.9em;
+    font-family: "Raleway-Regular", Arial, Verdana, sans-serif;
+}
+
+.stars2
+{
+    font-size: 0.9em;
+    margin-top: 2em;
+    margin-left: 9.6em;
+    color: rgb(217,217,217);
+}
+
+/***************************************** Activities part *****************************************/
+}

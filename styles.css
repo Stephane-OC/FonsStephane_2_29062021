@@ -245,6 +245,10 @@ input:focus
     outline: none;
 }
 
+.searchicon
+{
+    display: none;
+}
 /***************************************** Filters *****************************************/
 .filters
 {
@@ -329,7 +333,7 @@ input:focus
     align-items: center;
     font-family: "Raleway-ExtraLight", Arial, Verdana, sans-serif; 
     font-size: 1rem;
- }
+}
 
 .h5_symbol i
 {
@@ -360,7 +364,7 @@ input:focus
 .surround_box
 {
     height: 760px;
-    width: 70%;
+    width: 65%;
     background-color: #F2F2F2;
     margin-right: 40px;
     border-radius: 20px;
@@ -387,6 +391,8 @@ input:focus
 
 .article_rent
 {
+    display: flex;
+
     height: 40%;
     width: 30%;
     background-color: white;
@@ -397,29 +403,42 @@ input:focus
     overflow: hidden;
 }
 
-.pic1
+.art_rent
 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+.pics1
+{
+    display: flex;
+
     height: 65%;
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
     overflow: hidden;
 }
 
-.more
-{
-    font-size: 1.2em;
-    font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
-}
+
 
 .text_rent
 {
+    display: flex;
+    flex-direction: column;
+
     height: 35%;
     width: 100%;
+
 }
 
 .rent_text
 {
+    display: flex;
     font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
     margin-left: 0.8em;
     margin-top: 0.6em;
@@ -429,24 +448,33 @@ input:focus
 
 .rent_text2
 {
+    display: flex;
     margin-left: 0.9em;
     margin-top: -0.5em;
 }
 
 .stars_rent
-{
+{   
+    display: flex;
     margin-top: -0.3em;
+    margin-bottom: 1em;
     margin-left: 0.9em;
     color: rgb(217,217,217);
 }
 
+.more
+{
+    font-size: 1.2em;
+    font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
+
+}
 
 /******************* Box "The most populary" *******************/
 
 .surround_box2
 {
     height: 760px;
-    width: 30%;
+    width: 25%;
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 20px 40px 50px 40px;
@@ -462,7 +490,7 @@ input:focus
     background-color: #F2F2F2;
     border-radius: 20px;
     height: 700px;
-    width: 100%;
+    width: 90%;
 }
 
 .h3_populary
@@ -482,58 +510,96 @@ input:focus
 
 .article_populary
 {
+    display: flex;
+    flex-wrap: wrap;
     height: 24%;
     width: 98%;
     border-radius: 20px;
     background-color: white;
     box-shadow: #F2F2F2;
-    overflow: cover;
     overflow: hidden;
+    overflow: cover;
     margin: 0.3em;
     padding: 0.3em;
 }
 
+.art_populary
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+
 .pics2
 {
+    display: flex;
     height: 100%;
-    width: 40%;
+    width: 40%; 
+    object-fit: cover;
+    overflow: hidden;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    overflow: hidden;
 }
+
+.populary_pics
+{
+    display: block;
+
+    height: 100%;
+    width: 40%;
+    overflow: hidden;
+    overflow: cover;
+    padding-bottom: 0.8em;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+
 
 .populary_text
 {
-    height: 80%;
-    width: 90%;
+    display: flex;
+    display: block;
+    flex-direction: column;
+    justify-content: inherit;
+    text-align: inherit;
+    margin-left: 0.7em;
+    height: 100%;
+    width: 60%;
 }
 
 .text_populary
 {
-    margin-left: 12em;
-    margin-top: -8.5em;
-    margin-right: 0.2em;
+    display: flex;
     font-size: 1.1em;
-    font-weight: bolder;
-    font-family: "Raleway-bold", Arial, Verdana, sans-serif;
+    padding-right: 1.4em;
+    font-family: "Raleway-Extrabold", Arial, Verdana, sans-serif;
 }
 
 .text_populary2
 {
-    margin-left: 12em;
-    margin-top: 1em;
-    font-size: 1.1em;
+    display: flex;
+    font-size: 1em;
     font-family: "Raleway-Regular", Arial, Verdana, sans-serif;
+}
+
+.text_populary3
+{
+    display: flex;
+    font-size: 1.1em;
+    margin-right: 0em;
+    font-family: "Raleway-ExtraBold", Arial, Verdana, sans-serif;
 }
 
 .stars2
 {
-    margin-top: 2.5em;
-    margin-left: 12em;
-    font-size: 1.1em;
+    display: flex;
+    font-size: 1em;
     color: rgb(217,217,217);
+    padding-top: 1em;
 }
-
 /******************* Contener 2 with 1 box *******************/
 
 .conteneur2
@@ -649,7 +715,6 @@ input:focus
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-
     overflow: hidden;
 }
 
@@ -720,43 +785,44 @@ input:focus
 
 .activities_pics
 {
-    min-width: 100%;
-    margin-top: -270px;
+    height: 100%;
+    width:auto;
+
+    overflow: hidden;
+
 }
 
 .activities_pics2
 {
-    width: 100%;
-    margin-top: -100px;
-
+    height: 28em;
+    width: auto;
+    overflow: hidden;
 }
 
 .activities_pics3
 {
-    width: 100%;
-    margin-top: -30px;
-
+    height: 15em;
+    width:auto;
+    overflow: hidden;
 }
 
 .activities_pics4
 {
-    min-width: 100%;
-    margin-top: -200px;
-    margin-left: -360px;
+    width: 100%;
+    min-width: 300%;
+
 }
 
 .activities_pics5
 {
     width: 100%;
-    margin-top: -20px;
-    margin-left: 0px;
+    min-width: 100%;
 }
 
 .activities_pics6
 {
     width: 100%;
-    margin-top: -40px;
-    margin-left: 0px;
+    min-width: 100%;
 }
 
 
@@ -844,181 +910,35 @@ a
 
 
 
-/***************************************** Pictures *****************************************/
-
-/************************** Rent Pictures *************************/
-
-.rent_pics
-{
-    width: 100%;
-    margin-top: -20px;
-}
-
-.rent_pics2
-{
-    width: 100%;
-    margin-top: -20px;
-}
-
-.rent_pics3
-{
-    width: 100%;
-    margin-top: -20px;
-}
-
-.rent_pics4
-{
-    width: 100%;
-    margin-top: -80px;
-}
-
-.rent_pics5
-{
-    width: 100%;
-}
-
-.rent_pics6
-{
-    width: 100%;
-    margin-top: -160px;
-}
-/************************** Populary Pictures *************************/
-
-
-.populary_pics1
-{
-    width: 100%;
-    min-height: 100%;
-}
-
-.populary_pics2
-{
-    width: 100%;
-    min-height: 100%;
-
-}
-
-.populary_pics3
-{
-    width: 100%;
-    margin-top: -50px;
-}
 
 /***************************************** Responsive, Larger screen *****************************************/
 
 
-@media only screen and (max-width:1590px){
 
-/************************** rent Pictures 1590px *************************/
+    
 
-.rent_pics
-{
-    min-width: 100%;
-    width: 160%;
-}
-
-.rent_pics2
-{
-    min-width: 100%;
-    width: 160%;
-}
-
-.rent_pics3
-{
-    min-width: 100%;
-    width: 160%;
-}
-
-.rent_pics4
-{
-    min-width: 100%;
-    width: 160%;
-}
-
-.rent_pics5
-{
-    min-width: 100%;
-    width: 160%;
-}
-
-.rent_pics6
-{
-    width: 100%;
-}
-
-/************************** Populary Pictures 1590px*************************/
-
-.populary_pics1
-{
-    width: 100%;
-
-}
-
-.populary_pics2
-{
-    width: 100%;
-}
-
-.populary_pics3
-{
-    width: 100%;
-    margin-top: -50px;
-}
-
-.text_populary
-{
-    margin-left: 9em;
-    margin-top: -8.5em;
-    margin-right: 0em;
-    font-size: 1.1em;
-    font-weight: bolder;
-    font-family: "Raleway-bold", Arial, Verdana, sans-serif;
-}
-
-.text_populary2
+    
+    /***************************************** Responsive, little screen *****************************************/
+    
+    @media screen and (max-width: 1280px)
 {
     
-    margin-left: 10em;
-    margin-top: 1em;
-    font-size: 1em;
-    font-family: "Raleway-Regular", Arial, Verdana, sans-serif;
-
-}
-
-.stars2
-{
-    margin-top: 2.5em;
-    margin-left: 10em;
-    font-size: 1em;
-    color: rgb(217,217,217);
-}
-
-
-}
-/***************************************** End of larger screen responsive *****************************************/
-
-
-/***************************************** Responsive, little screen *****************************************/
-
-@media screen and (max-width: 1280px)
-{
-
-/*********************************** Container rules ***********************************/
-.conteneur
-{
-    display: flex;
-    flex-direction: column;
-}
-
-.surround_box:nth-child(1)                  /* CSS rule to invert 2 elements, here box 1 & 2*/
-{
-    order: 2;
-}
-
-.surround_box:nth-child(2)
-{
-    order: (1);
-}
+    /*********************************** Container rules ***********************************/
+    .conteneur
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .surround_box:nth-child(1)                  /* CSS rule to invert 2 elements, here box 1 & 2*/
+    {
+        order: 2;
+    }
+    
+    .surround_box:nth-child(2)
+    {
+        order: (1);
+    }
 
 
 /*********************************** Rent Part 1280 ***********************************/
@@ -1116,7 +1036,6 @@ a
     border-radius: 20px;
     height: 80%;
     width: auto;
-
     margin-left: -2em;
     margin-right: 0.8em;
 
@@ -1124,7 +1043,10 @@ a
 
 .article_populary
 {
-    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 90%;
     width: 33%;
     border-radius: 20px;
     background-color: white;
@@ -1135,6 +1057,7 @@ a
 
 .pics2
 {
+    display: flex;
     height: 100%;
     width: 45%;
     border-top-left-radius: 20px;
@@ -1145,15 +1068,14 @@ a
 
 .populary_text
 {
+    display: flex;
     height: 80%;
     width: 90%;
 }
 
 .text_populary
 {
-    margin-left: 10.8em;
-    margin-top: -8.5em;
-    margin-right: 0.1em;
+    display: flex;
     font-size: 1em;
     font-weight: bolder;
     font-family: "Raleway-bold", Arial, Verdana, sans-serif;
@@ -1161,18 +1083,14 @@ a
 
 .text_populary2
 {
-    margin-left: 10.8em;
-    margin-top: 1em;
-    margin-right: 0.1;
+    display: flex;
     font-size: 1em;
     font-family: "Raleway-Regular", Arial, Verdana, sans-serif;
 }
 
 .stars2
 {
-    margin-top: 2em;
-    margin-left: 10.8em;
-    margin-right: 0.1em;
+    display: flex;
     font-size: 1em;
     color: rgb(217,217,217);
 }
@@ -1189,50 +1107,6 @@ a
 
 
 
-.activities_pics
-{
-    min-width: 100%;
-    margin-top: -270px;
-}
-
-.activities_pics2
-{
-    width: 100%;
-    margin-top: -100px;
-
-}
-
-.activities_pics3
-{
-    width: 100%;
-    margin-top: -30px;
-}
-
-.activities_pics4
-{
-    min-width: 100%;
-    margin-top: -200px;
-    margin-left: -440px;
-    
-}
-
-.activities_pics5
-{
-    width: 100%;
-    margin-top: -20px;
-    margin-left: 0px;
-}
-
-.activities_pics6
-{
-    width: 150%;
-    min-width: 100%;
-    margin-top: -50px;
-    margin-left: -40px;
-}
-
-
-}
 
 /***************************************** End of 1280px responsive *****************************************/
 
@@ -1270,8 +1144,6 @@ a
     height: 520px;
     width: 90%;
     background-color: #F2F2F2;
-    padding-top: -20em;
-
     border-radius: 20px; 
 
 }
@@ -1326,6 +1198,8 @@ a
 {
     height: 35%;
     width: 100%;
+    display: block;
+    justify-content: inherit;
 }
 
 .rent_text
@@ -1348,7 +1222,7 @@ a
 .stars_rent
 {
     font-size: 0.8em;
-    margin-top: -0.8em;
+
     margin-left: 0.9em;
     color: rgb(217,217,217);
 }
@@ -1357,7 +1231,7 @@ a
 .more
 {
     margin-top: 1em;
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
 }
 
@@ -1367,13 +1241,12 @@ a
 
 .surround_box2
 {
-    height: 200px;
+    height: 220px;
     width: 90%;
     background-color: #F2F2F2;
     border-radius: 20px;
-
     margin-bottom: 20px;
-
+    
     font-family: "Raleway-regular", Arial, Verdana, sans-serif;
 }
 
@@ -1385,10 +1258,8 @@ a
     background-color: #F2F2F2;
     border-radius: 20px;
     height: 80%;
-    width: auto;
-
-    margin-left: -2em;
-    margin-right: 0.8em;
+    width: 100%;
+    align-items: center;
 
 }
 
@@ -1399,13 +1270,15 @@ a
     align-items: center;
     font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
     font-size: 1.2em;
-    margin-top: -1em;
 }
 
 
 .article_populary
 {
-    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
     width: 33%;
     border-radius: 20px;
     background-color: white;
@@ -1414,49 +1287,67 @@ a
     margin: 0.2em;
 }
 
+.art_populary
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: inherit;
+}
+
 .pics2
 {
+    display: flex;
+
     height: 100%;
-    width: 45%;
+    width: 40%;
+
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    overflow: cover;
 }
+
 
 .populary_text
 {
+    display: flex;
+    display: block;
+    flex-direction: column;
+    justify-content: inherit;
+    text-align: inherit;
+    margin-left: 0.7em;
     height: 100%;
-    width: 100%;
+    width: 60%;
 }
-
-
 
 .text_populary
 {
-
-    margin-left: 9.5em;
-    margin-top: -8em;
-    margin-right: 0.1em;
-    font-size: 0.9em;
-    font-weight: bolder;
+    display: flex;
+    font-size: 1em;
+    padding-right: 1.4em;
     font-family: "Raleway-bold", Arial, Verdana, sans-serif;
 }
 
 .text_populary2
 {
-    font-size: 0.9em;
-    margin-left: 9.5em;
-    margin-top: 1em;
+    display: flex;
+    font-size: 1em;
     font-family: "Raleway-Regular", Arial, Verdana, sans-serif;
+}
 
+.text_populary3
+{
+    display: flex;
+    font-size: 1em;
+    margin-right: 0em;
+    font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
 }
 
 .stars2
 {
-    font-size: 0.9em;
-    margin-top: 1.8em;
-    margin-left: 9.5em;
+    display: flex;
+    font-size: 1em;
     color: rgb(217,217,217);
+    padding-top: 1em;
 }
 
 
@@ -1474,7 +1365,6 @@ a
     width: 100%;
     border-radius: 20px;
     border-bottom: 40px;
-
 }
 
 .box3
@@ -1501,22 +1391,6 @@ a
     font-weight: bold;
     font-family: "Raleway-bold", Arial, Verdana, sans-serif;
     overflow: hidden;
-}
-
-
-.activities_pics
-{
-    min-width: 100%;
-    margin-top: -270px;
-    margin-left: -60px;
-}
-
-.activities_pics4
-{
-    min-width: 100%;
-    margin-top: -260px;
-    margin-left: -460px;
-    
 }
 
 
@@ -1566,59 +1440,68 @@ header a
 {
     text-decoration: none;
     color: black;
-    margin: 0px;
+    margin-right: 0px;
+    width: 50%;
 }
 
 /****** Nav have now the 3 buttons on 2 ligns ******/
 
 nav
 {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 20px;
 }
 
 .logo
 {
-    width: 40%;
+    width: 45%;
 }
 
 .logo_reservia
 {
-    width: 16rem;
+    width: 15rem;
 }
 
 .navrent
 {
-    font-family: "raleway-regular", Arial, Verdana, sans-serif;
-    font-size: 2.5em;
-    margin-right: 0em;
 
+    font-family: "raleway-regular", Arial, Verdana, sans-serif;
+    font-size: 2.4em;
+    margin-right: 0em;
+    margin-left: 0em;
+    text-align: center;
     font-weight: bolder;
     border-bottom: 5px solid #F2F2F2;
-    width: 45%;
+    width: 44%;
 }
 
 .navactivities
 {
+    text-align: flex-start;
     font-family: "raleway-regular", Arial, Verdana, sans-serif;
-    font-size: 2.5em;
-    width: 50%;
-    margin-right: -40px;
-    padding-right: 0px;
+    font-size: 2.4em;
 
+
+    text-align: center;
     font-weight: bolder;
     border-bottom: 5px solid #F2F2F2;
+    width: 44%;
 }
 
 .navsubscribe
 {
-
     font-family: "raleway-regular", Arial, Verdana, sans-serif;
     font-size: 2.8em;
     margin-right: 0em;
     width: 45%;
     font-weight: bold;
     color: #0065FC;
+    align-items: center;
+    text-align: end;
 }
 
 .blue
@@ -1628,13 +1511,13 @@ nav
 
 .navrent a:hover /**** When i pass over the "Hébergement" link ****/
 {
-    border-bottom: 2.5px solid;
+    border-bottom: 5px solid;
     color: #0065FC;
 }
 
 .navactivities a:hover /**** When i pass over the "Activitées" link ****/
 {
-    border-bottom: 2.5px solid;
+    border-bottom: 5px solid;
     color: #0065FC;
 }
 
@@ -1715,17 +1598,25 @@ nav
     padding-left: -0.2em;
 }
 
-.submit
+
+.searchicon
 {
+    display: block;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+    width: 3em;
     border-color: #F2F2F2;
     background-color: #0065FC;
     color: white;
     font-family: 'raleway-bold', Arial, Verdana, sans-serif;;
-    font-size: 1.6rem;
+    font-size: 3rem;
     justify-content: center;
     border-width: 0.2px;
+}
+
+.submit
+{
+    display: none;
 }
 
 .submit:hover
@@ -1795,7 +1686,7 @@ input:focus
     color: black;
     text-decoration: none;
     background-color: white;
-    border: 2px solid #F2F2F2;
+    border: 5px solid #F2F2F2;
     transition: all 0.8s;
     -webkit-transition: all 0.1s;
 }
@@ -1814,20 +1705,21 @@ input:focus
     display: flex;
     align-items: center;
     font-family: "Raleway-ExtraLight", Arial, Verdana, sans-serif; 
-    font-size: 1.6rem;
+    font-size: 2.5rem;
  }
 
 .h5_symbol i
 {
     display: flex;
+    align-items: center;
     color: #0065FC;
-    border:#F2F2F2 solid 2px;
-    font-size: 1.6em;
-    width: 50px; 
-    height: 50px;
+    border:#F2F2F2 solid 4px;
+    font-size: 2.5rem;
+    width: 100px; 
+    height: 80px;
     margin-top: 1em;
-    margin-right: 0.2em;
-    border-radius: 50%; 
+    margin-left: 0em;
+    border-radius: 80%; 
     justify-content: center; 
     align-items: center;
 }
@@ -1881,9 +1773,8 @@ input:focus
     width: 95%;/* To make my items take 100% width */
     background-color: white;
     box-shadow: 0px 0px 5px grey;
-    border-radius: 40px;
     margin: 0.9em;
-    padding: 0.4em;
+    padding: 0.6em;
     overflow: hidden;
 
 }
@@ -1892,8 +1783,7 @@ input:focus
 {
     height: 60%;
     width: 100%;
-    max-width: 100%;
-    min-width: 50%;
+
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     overflow: hidden;
@@ -1999,108 +1889,48 @@ input:focus
     margin: 0.9em;
 }
 
-.pics2
-{
-    height: 100%;
-    width: 45%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    overflow: cover;
-}
-
 .populary_text
 {
-    height: 80%;
-    width: 100%;
+    display: flex;
+    display: block;
+    flex-direction: column;
+    justify-content: inherit;
+    text-align: inherit;
+    margin-left: 0.7em;
+    height: 100%;
+    width: 60%;
 }
+
 
 .text_populary
 {
-    margin-top: -9em;
-    margin-left: 11em;
-    margin-right: 0.1em;
+    display: flex;
     font-size: 2.5em;
-    font-weight: bolder;
+    padding-right: 1.4em;
     font-family: "Raleway-bold", Arial, Verdana, sans-serif;
 }
 
 .text_populary2
 {
+    display: flex;
     font-size: 2.3em;
-    margin-top: 1em;
-    margin-left: 12em;
     font-family: "Raleway-Regular", Arial, Verdana, sans-serif;
+}
+
+.text_populary3
+{
+    display: flex;
+    font-size: 2.5em;
+    margin-right: 0em;
+    font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
 }
 
 .stars2
 {
-    font-size: 2.2em;
-    margin-top: 2.3em;
-    margin-left: 12.4em;
+    display: flex;
+    font-size: 2.5em;
     color: rgb(217,217,217);
-}
-
-/***************************************** Pictures Mobile *****************************************/
-
-/************************** Rent Pictures Mobile *************************/
-
-.rent_pics
-{
-    min-width: 80%;
-    margin-top: -220px;
-    margin-left: -180px;
-}
-
-.rent_pics2
-{
-    width: 100%;
-    margin-top: -180px;
-}
-
-.rent_pics3
-{
-    width: 100%;
-    margin-top: -170px;
-}
-
-.rent_pics4
-{
-    min-width: 100%;
-    margin-top: -620px;
-    margin-left: -260px;
-}
-
-.rent_pics5
-{
-    min-width: 100%;
-    margin-top: -220px;
-    margin-left: -60px;
-}
-
-.rent_pics6
-{
-    min-width: 100%;
-    margin-top: -560px;
-}
-/************************** Populary Pictures Mobile *************************/
-
-
-.populary_pics1
-{
-    min-width: 100%;
-    min-height: 100%;
-}
-
-.populary_pics2
-{
-    min-width: 100%;
-    min-height: 100%;
-}
-
-.populary_pics3
-{
-    min-width: 100%;
-    margin-top: -100px;
+    padding-top: 1em;
 }
 
 /**************************************** Box activities Mobile ******************************************/
@@ -2300,49 +2130,47 @@ input:focus
     overflow: cover;
 }
 
-
-/******************* Negative margin, to make image move in the position i want *******************/
-
 .activities_pics
 {
-    min-width: 100%;
-    margin-top: -270px;
+    height: auto;
+    width:100%;
+
+    overflow: hidden;
+
 }
 
 .activities_pics2
 {
+    height: auto;
     width: 100%;
-    margin-top: -460px;
+    overflow: hidden;
 }
 
 .activities_pics3
 {
+    height: auto;
     width: 100%;
-    margin-top: -30px;
+    overflow: hidden;
 }
 
 .activities_pics4
 {
-    min-width: 100%;
-    margin-top: -200px;
-    margin-left: -260px;
-    
+    width: 100%;
+    min-width: 300%;
+
 }
 
 .activities_pics5
 {
     width: 100%;
-    margin-top: -20px;
-    margin-left: 0px;
+    min-width: 100%;
 }
 
 .activities_pics6
 {
     width: 100%;
-    margin-top: -80px;
-    margin-left: 0px;
+    min-width: 100%;
 }
-
 
 /***************************************** Footer Mobile opening *****************************************/
 
@@ -2355,9 +2183,10 @@ input:focus
     background-color:#F2F2F2; /* Background grey */
     color: black; /* Footer text black */
     text-decoration: none;
-    padding-right: 0px;
-    margin: 0px 0px 0px 0px;
-
+    margin-right:0em;
+    padding-right:0em;
+    background-position: cover;
+    background-size: cover;
 }
 
 .footer_reservia ul
@@ -2452,5 +2281,5 @@ input:focus
     margin-bottom: 15px;
 }
 
-}
+
 /***************************************** End of mobile responsive *****************************************/

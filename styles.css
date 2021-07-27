@@ -356,19 +356,20 @@ input:focus
 {
     display: flex;
     margin-left: 40px;
-    margin-right: 0px;
+    margin-right: 40px;
 }
 
 /******************* Box "Hébergement Marseille *******************/
 
 .surround_box
 {
-    height: 760px;
+    height: 770px;
     width: 65%;
     background-color: #F2F2F2;
     margin-right: 40px;
     border-radius: 20px;
-    padding: 20px 40px 50px 40px; 
+    padding-right: 3em;
+    padding-left: 3em
 }
 
 .box1
@@ -377,7 +378,7 @@ input:focus
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 700px;
+    height: 720px;
     width: 100%;
 }
 
@@ -387,12 +388,9 @@ input:focus
     font-size: 1.3em;
 }
 
-
-
 .article_rent
 {
     display: flex;
-
     height: 40%;
     width: 30%;
     background-color: white;
@@ -407,56 +405,51 @@ input:focus
 {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
 }
 
 
-.pics1
+.pics_rentcontain
 {
     display: flex;
-
     height: 65%;
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    object-fit: cover;
     overflow: hidden;
 }
 
-
+.rent_pics
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
 .text_rent
 {
-    display: flex;
-    flex-direction: column;
-
     height: 35%;
     width: 100%;
-
+    margin-top: 0em;
 }
 
 .rent_text
 {
-    display: flex;
     font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
     margin-left: 0.8em;
-    margin-top: 0.6em;
+    margin-top: 0.2em;
     font-size: 1.1em;
     font-weight: bolder;
 }
 
 .rent_text2
 {
-    display: flex;
     margin-left: 0.9em;
-    margin-top: -0.5em;
+    margin-top: 0em;
 }
 
 .stars_rent
 {   
-    display: flex;
-    margin-top: -0.3em;
+
     margin-bottom: 1em;
     margin-left: 0.9em;
     color: rgb(217,217,217);
@@ -466,31 +459,30 @@ input:focus
 {
     font-size: 1.2em;
     font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
-
 }
 
 /******************* Box "The most populary" *******************/
 
 .surround_box2
 {
-    height: 760px;
-    width: 25%;
+    height: 770px;
+    width: 30%;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 20px 40px 50px 40px;
     font-family: "Raleway-regular", Arial, Verdana, sans-serif;
-    margin-right: 60px;
+
 }
 
 .box2
 {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
     background-color: #F2F2F2;
     border-radius: 20px;
     height: 700px;
-    width: 90%;
+    width: 100%;
 }
 
 .h3_populary
@@ -502,100 +494,94 @@ input:focus
     font-size: 1.2em;
 }
 
+.populary_h3
+{
+    justify-content: flex-start;
+    margin-left: 2em;
+}
+
 .h3_populary i 
 {
     font-size: 1.3em;
+    justify-content: flex-end;
+    margin-right: 2em;
 }
-
 
 .article_populary
 {
-    display: flex;
-    flex-wrap: wrap;
     height: 24%;
-    width: 98%;
+    width: 80%;
     border-radius: 20px;
+    box-shadow: 0px 0px 5px grey;
     background-color: white;
     box-shadow: #F2F2F2;
     overflow: hidden;
-    overflow: cover;
     margin: 0.3em;
     padding: 0.3em;
+    display: flex;
 }
 
 .art_populary
 {
     display: flex;
-    width: 100%;
-    height: 100%;
 }
 
-
-.pics2
+.pics_populary
 {
-    display: flex;
     height: 100%;
-    width: 40%; 
+    width: 100%; 
     object-fit: cover;
-    overflow: hidden;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
 .populary_pics
 {
-    display: block;
-
     height: 100%;
     width: 40%;
     overflow: hidden;
-    overflow: cover;
     padding-bottom: 0.8em;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-
-
-
 .populary_text
 {
-    display: flex;
-    display: block;
-    flex-direction: column;
-    justify-content: inherit;
+    justify-content: space-between;
     text-align: inherit;
-    margin-left: 0.7em;
+    vertical-align: top;
     height: 100%;
     width: 60%;
 }
 
 .text_populary
 {
-    display: flex;
+    margin-top: 0.8em;
+    margin-left: 0.6em;
     font-size: 1.1em;
-    padding-right: 1.4em;
+    padding-right: 4em;
     font-family: "Raleway-Extrabold", Arial, Verdana, sans-serif;
 }
 
 .text_populary2
 {
-    display: flex;
+    margin-left: 0.6em;
     font-size: 1em;
     font-family: "Raleway-Regular", Arial, Verdana, sans-serif;
 }
 
 .text_populary3
 {
-    display: flex;
+    margin-top: 0.8em;
+    margin-left: 0.6em;
     font-size: 1.1em;
-    margin-right: 0em;
-    font-family: "Raleway-ExtraBold", Arial, Verdana, sans-serif;
+    padding-right: 1.2em;
+    font-family: "Raleway-Extrabold", Arial, Verdana, sans-serif;
 }
 
 .stars2
 {
-    display: flex;
+    margin-left: 0.6em;
     font-size: 1em;
     color: rgb(217,217,217);
     padding-top: 1em;
@@ -633,28 +619,6 @@ input:focus
     font-size: 1.3em;
     font-family: "Raleway-bold", Arial, Verdana, sans-serif;
 }
-/******************* Box 3 Photo 1 *******************/
-
-.article_act3
-{
-    height: 90%;
-    width: 20%;
-    border-radius: 20px;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 0px 0px 5px grey;
-}
-
-.pics3
-{
-    height: 90%;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    overflow: hidden;
-}
-
-
 
 .text_activities
 {
@@ -674,11 +638,38 @@ input:focus
     padding-left: 40px;
     font-family: "raleway-bold", Arial, Verdana, sans-serif;
 }
+/******************* Activities large Pictures *******************/
+
+.article_actlarge
+{
+    height: 90%;
+    width: 20%;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px grey;
+}
 
 
-/******************* Box 3 Photo 2 *******************/
+.pics_actlargediv
+{
+    height: 90%;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 
-.article_act4
+}
+
+.pics_act
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/******************* Activities Medium Pictures *******************/
+
+.article_actmedium
 {
     height: 50%;
     width: 20%;
@@ -688,7 +679,7 @@ input:focus
     box-shadow: 0px 0px 5px grey;
 }
 
-.pics4
+.pics_actmediumdiv
 {
     height: 82%;
     width: 100%;
@@ -697,9 +688,9 @@ input:focus
     overflow: hidden;
 }
 
-/******************* Box 3 Photo 3 *******************/
+/******************* Activities Medium Small *******************/
 
-.article_act5
+.article_actsmall
 {
     height: 30%;
     width: 20%;
@@ -709,7 +700,7 @@ input:focus
     box-shadow: 0px 0px 5px grey;
 }
 
-.pics5
+.pics_actsmalldiv
 {
     height: 70%;
     width: 100%;
@@ -717,114 +708,6 @@ input:focus
     border-top-left-radius: 20px;
     overflow: hidden;
 }
-
-/******************* Box 3 Photo 4 *******************/
-
-.article_act6
-{
-    height: 90%;
-    width: 20%;
-    border-radius: 20px;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 0px 0px 5px grey;
-}
-
-.pics6
-{
-    height: 90%;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    overflow: hidden;
-}
-
-
-
-/******************* Box 3 Photo 5 *******************/
-
-.article_act7
-{
-    height: 34%;
-    width: 20%;
-    border-radius: 20px;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 0px 0px 5px grey;
-}
-
-.pics7
-{
-    height: 75%;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    overflow: hidden;
-}
-
-/******************* Box 3 Photo 6 *******************/
-
-.article_act8
-{
-    height: 45%;
-    width: 20%;
-    border-radius: 20px;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 0px 0px 5px grey;
-}
-
-.pics8
-{
-    height: 80%;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    overflow: hidden;
-}
-
-.activities_pics
-{
-    height: 100%;
-    width:auto;
-
-    overflow: hidden;
-
-}
-
-.activities_pics2
-{
-    height: 28em;
-    width: auto;
-    overflow: hidden;
-}
-
-.activities_pics3
-{
-    height: 15em;
-    width:auto;
-    overflow: hidden;
-}
-
-.activities_pics4
-{
-    width: 100%;
-    min-width: 300%;
-
-}
-
-.activities_pics5
-{
-    width: 100%;
-    min-width: 100%;
-}
-
-.activities_pics6
-{
-    width: 100%;
-    min-width: 100%;
-}
-
 
 
 /***************************************** Footer opening *****************************************/
@@ -907,43 +790,34 @@ a
     margin-bottom: 15px;
 }
 
-
-
-
-
-/***************************************** Responsive, Larger screen *****************************************/
-
-
-
+/***************************************** Responsive, little screen *****************************************/
     
+@media only screen and (min-width: 1024px) and (max-width: 1280px)
 
-    
-    /***************************************** Responsive, little screen *****************************************/
-    
-    @media screen and (max-width: 1280px)
 {
     
-    /*********************************** Container rules ***********************************/
-    .conteneur
-    {
-        display: flex;
-        flex-direction: column;
-    }
+/*********************************** Container rules ***********************************/
+.conteneur
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
     
-    .surround_box:nth-child(1)                  /* CSS rule to invert 2 elements, here box 1 & 2*/
-    {
-        order: 2;
-    }
+.surround_box:nth-child(1)                  /* CSS rule to invert 2 elements, here box 1 & 2*/
+{
+    order: 2;
+}
     
-    .surround_box:nth-child(2)
-    {
-        order: (1);
-    }
+.surround_box:nth-child(2)
+{
+    order: (1);
+}
 
 
 /*********************************** Rent Part 1280 ***********************************/
-
-
 .text_rent
 {
     height: 35%;
@@ -967,35 +841,19 @@ a
     justify-content: space-between;
     height: 520px;
     margin-bottom: 8.6em;
-
 }
 
 .article_rent
 {
     height: 50%;
     width: 30%;
-    background-color: white;
-    box-shadow: 0px 0px 5px grey;
-    border-radius: 20px;
-    margin: 0.2em;
-    padding: 0.2em;
-    overflow: hidden;
-}
-
-.pic1
-{
-    height: 65%;
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    overflow: hidden;
 }
 
 .rent_text
 {
     font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
     margin-left: 1em;
-    margin-top: 0.6em;
+    margin-top: 0em;
     margin-right: 0.7em;
     font-size: 1em;
     font-weight: bolder;
@@ -1005,26 +863,24 @@ a
 {
     font-size: 1em;
     margin-left: 1em;
-    margin-top: -0.6em;
     margin-right: 0.6em;
 }
 
 .stars_rent
 {
-    margin-top: -0.3em;
     margin-left: 0.9em;
     color: rgb(217,217,217);
 }
-
 
 
 /*********************************** Most populary 1280 ***********************************/
 .surround_box2
 {
     height: 260px;
-    width: 90%;
+    width: 98%;
     background-color: #F2F2F2;
     border-radius: 20px; 
+    margin-bottom: 40px;
 }
 
 .box2
@@ -1034,67 +890,44 @@ a
     justify-content: space-between;
     background-color: #F2F2F2;
     border-radius: 20px;
-    height: 80%;
-    width: auto;
-    margin-left: -2em;
-    margin-right: 0.8em;
-
+    height: 90%;
+    width: 100%;
 }
 
 .article_populary
 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 90%;
-    width: 33%;
+    height: 80%;
+    width: 30%;
     border-radius: 20px;
     background-color: white;
     box-shadow: #F2F2F2;
     overflow: hidden;
-    margin: 0.2em;
-}
-
-.pics2
-{
-    display: flex;
-    height: 100%;
-    width: 45%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    overflow: cover;
-}
-
-
-.populary_text
-{
-    display: flex;
-    height: 80%;
-    width: 90%;
 }
 
 .text_populary
 {
-    display: flex;
     font-size: 1em;
+    margin-left: 1em;
+    margin-right: 0em;
     font-weight: bolder;
     font-family: "Raleway-bold", Arial, Verdana, sans-serif;
 }
 
 .text_populary2
 {
-    display: flex;
     font-size: 1em;
+    margin-left: 1em;
+    margin-top: 2em;
     font-family: "Raleway-Regular", Arial, Verdana, sans-serif;
 }
 
 .stars2
 {
-    display: flex;
+    margin-bottom: 5em;
+    margin-left: 1em;
     font-size: 1em;
     color: rgb(217,217,217);
 }
-
 
 .more
 {
@@ -1102,25 +935,21 @@ a
     font-size: 1.4em;
     font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
 }
-
 /*********************************** Activities 1280 ***********************************/
-
-
-
-
+.sub_activities1
+{
+    margin-left: 0.7em;
+    font-weight: bold;
+}
 /***************************************** End of 1280px responsive *****************************************/
-
+}
 
 /***************************************** Responsive, touch pad *****************************************/
 
 /******************** Responsive, touch pad Landscape ********************/
-@media all and (max-width: 1024px){
-
-
+@media only screen and (min-width: 480px) and (max-width: 1024px){
 
 /***************************************** Container 1 Tablette*****************************************/
-
-
 .conteneur
 {
     display: flex;
@@ -1136,16 +965,14 @@ a
 {
     order: (1);
 }
-
-
 /***************************************** Hébergements touch pad *****************************************/
+
 .surround_box
 {
-    height: 520px;
+    height: 600px;
     width: 90%;
     background-color: #F2F2F2;
     border-radius: 20px; 
-
 }
 
 .box1
@@ -1154,7 +981,7 @@ a
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 420px;
+    height: 450px;
     margin-bottom: 8.6em;
 }
 
@@ -1163,43 +990,14 @@ a
     font-family: "raleway-bold", Arial, Verdana, sans-serif;
     font-size: 1.3em;
     margin-top: 0.1em;
-
-}
-
-.article_rent
-{
-    height: 50%;
-    width: 30%;
-    background-color: white;
-    box-shadow: 0px 0px 5px grey;
-    border-radius: 20px;
-    margin: 0.2em;
-    padding: 0.2em;
-    overflow: hidden;
-
-}
-
-.pic1
-{
-    height: 65%;
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    overflow: hidden;
-}
-
-.rent_pics4
-{
-    min-width: 100%;
-
 }
 
 .text_rent
 {
     height: 35%;
     width: 100%;
-    display: block;
     justify-content: inherit;
+    display: inline-block;
 }
 
 .rent_text
@@ -1207,47 +1005,49 @@ a
     font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
     font-size: 1em;
     margin-left: 0.8em;
-    margin-top: 0.6em;
+    margin-top: 0.1em;
     font-weight: bolder;
 }
 
 .rent_text2
 {
+    
     font-size: 0.9em;
     margin-left: 0.9em;
-    margin-top: -1em;
-
+    margin-top: -0.7em;
 }
 
 .stars_rent
 {
     font-size: 0.8em;
-
     margin-left: 0.9em;
     color: rgb(217,217,217);
 }
 
-
 .more
 {
-    margin-top: 1em;
+    margin-top: 0em;
     font-size: 1.2em;
     font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
 }
-
-
-   /***************************************** Most polulary touch pad *****************************************/
-
-
+/***************************************** Most polulary touch pad *****************************************/
 .surround_box2
 {
     height: 220px;
-    width: 90%;
+    width: 100%;
     background-color: #F2F2F2;
+    border-radius: 20px; 
+    margin-bottom: 40px;
+}
+
+.article_populary
+{
+    height: 80%;
+    width: 30%;
     border-radius: 20px;
-    margin-bottom: 20px;
-    
-    font-family: "Raleway-regular", Arial, Verdana, sans-serif;
+    background-color: white;
+    box-shadow: #F2F2F2;
+    overflow: hidden;
 }
 
 .box2
@@ -1257,9 +1057,9 @@ a
     justify-content: space-between;
     background-color: #F2F2F2;
     border-radius: 20px;
-    height: 80%;
+    height: 90%;
     width: 100%;
-    align-items: center;
+
 
 }
 
@@ -1272,46 +1072,8 @@ a
     font-size: 1.2em;
 }
 
-
-.article_populary
-{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 100%;
-    width: 33%;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: #F2F2F2;
-    overflow: hidden;
-    margin: 0.2em;
-}
-
-.art_populary
-{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: inherit;
-}
-
-.pics2
-{
-    display: flex;
-
-    height: 100%;
-    width: 40%;
-
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-}
-
-
 .populary_text
 {
-    display: flex;
-    display: block;
-    flex-direction: column;
     justify-content: inherit;
     text-align: inherit;
     margin-left: 0.7em;
@@ -1321,36 +1083,34 @@ a
 
 .text_populary
 {
-    display: flex;
-    font-size: 1em;
-    padding-right: 1.4em;
+    font-size: 0.9em;
+    margin-left: 0em;
+    margin-top: 0.4em;
     font-family: "Raleway-bold", Arial, Verdana, sans-serif;
 }
 
 .text_populary2
 {
-    display: flex;
     font-size: 1em;
+    margin-left: 0em;
     font-family: "Raleway-Regular", Arial, Verdana, sans-serif;
 }
 
 .text_populary3
 {
-    display: flex;
-    font-size: 1em;
-    margin-right: 0em;
-    font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
+    margin-top: 0.4em;
+    font-size: 0.9em;
+    margin-left: 0em;
+    font-family: "Raleway-bold", Arial, Verdana, sans-serif;
 }
 
 .stars2
 {
-    display: flex;
     font-size: 1em;
     color: rgb(217,217,217);
-    padding-top: 1em;
+    margin-left: 0em;
+    margin-top: 0.2em;
 }
-
-
 /***************************************** Activities part touch pad*****************************************/
 
 .conteneur2
@@ -1376,7 +1136,6 @@ a
     align-items: center;
 }
 
-
 .text_activities
 {
     height: 20%;
@@ -1393,21 +1152,18 @@ a
     overflow: hidden;
 }
 
-
 }
-    
-
 /***************************************** End of touch pad responsive *****************************************/
 
 
 /***************************************** Responsive, Mobile *****************************************/
 
-@media all and (max-device-width: 480px)
+
+@media only screen and (min-width: 480px) and (max-width: 1024px)
 {
 
 
 /***************************************** Header, Mobile *****************************************/
-
 
 nav :nth-child(1)                  /* CSS rule to invert 2 elements, here box 1 & 2*/
 {
@@ -1530,7 +1286,6 @@ nav
     color: #0065FC;
 }
 
-
 /************ End of Nav physical buttons ************/
 
 #mainh1
@@ -1548,16 +1303,12 @@ nav
     margin: 15px 0px 20px 40px;
 }
 
-
-
-
 /***************************************** Searh bar, Mobile *****************************************/
 .researh
 {
     display: flex;
     justify-content: center;
 }
-
 
 .marker
 {
@@ -1573,7 +1324,6 @@ nav
     font-size: 2.8em;
     border-radius: 30px 0 0 30px;
 }
-
 
 .input
 {
@@ -1597,7 +1347,6 @@ nav
     opacity: 0.9;
     padding-left: -0.2em;
 }
-
 
 .searchicon
 {
@@ -1628,7 +1377,6 @@ input:focus
 {
     outline: none;
 }
-
 
 /***************************************** Filters, Mobile *****************************************/
 
@@ -1699,7 +1447,6 @@ input:focus
     background-color: #F2F2F2;
 }
 
-
 .h5_symbol h5
  {
     display: flex;
@@ -1724,8 +1471,6 @@ input:focus
     align-items: center;
 }
 /***************************************** Container 1 Mobile *****************************************/
-
-
 .conteneur
 {
     display: flex;
@@ -1733,7 +1478,7 @@ input:focus
     height: auto;
     margin-left: 0px;
     margin-right: 0px;
-    margin-bottom: -6em;
+
 }
 
 .surround_box
@@ -1770,25 +1515,30 @@ input:focus
 .article_rent /* All my hébergement content are align in one line*/
 {
     height: 30em;
-    width: 95%;/* To make my items take 100% width */
+    width: 95%;/* To make my items take 95% width */
     background-color: white;
     box-shadow: 0px 0px 5px grey;
     margin: 0.9em;
     padding: 0.6em;
     overflow: hidden;
-
 }
 
-.pic1
+.pics_rentcontain
 {
+    display: flex;
     height: 60%;
     width: 100%;
-
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     overflow: hidden;
 }
 
+.rent_pics
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 
 .text_rent
 {
@@ -1801,7 +1551,7 @@ input:focus
     font-family: "Raleway-ExtraBold", Arial, Verdana, sans-serif;
     font-size: 2.5em;
     margin-left: 0.8em;
-    margin-top: 0.4em;
+    margin-top: 0.1em;
 }
 
 .rent_text2
@@ -1845,9 +1595,6 @@ input:focus
 {
     height: auto;
     width: 100%;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-top: 5em;
     background-color: #F2F2F2;
 }
 
@@ -1858,6 +1605,8 @@ input:focus
     justify-content: space-around;
     align-items: center;
     height: auto;
+    width: 100%;
+    margin: 0em;
     padding-bottom: 1em;
 }
 
@@ -1955,6 +1704,7 @@ input:focus
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .h3_activities
@@ -1962,30 +1712,65 @@ input:focus
     font-size: 3em;
     font-family: "Raleway-Extrabold", Arial, Verdana, sans-serif;
 }
-/******************* Box 3 Photo 1 Mobile *******************/
+/******************* Box 3 Photo 3 Articles *******************/
 
-.article_act3
+.article_actsmall
 {
     height: 30em;
-    width: 95%;
-    border-radius: 40px;
-    margin: 0.9em;
-    padding: 0em;
+    width: 95%;/* To make my items take 95% width */
+    border-radius: 20px;
     background-color: white;
     overflow: hidden;
     box-shadow: 0px 0px 5px grey;
+    margin-bottom: 2em;
 }
 
-.pics3
+.article_actmedium
 {
+    height: 30em;
+    width: 95%;/* To make my items take 95% width */
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px grey;
+    margin-bottom: 2em;
+}
 
+.article_actlarge
+{
+    height: 30em;
+    width: 95%;/* To make my items take 95% width */
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px grey;
+    margin-bottom: 2em;
+}
+
+.pics_actsmalldiv
+{
     height: 70%;
     width: 100%;
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
-    overflow: hidden;
-    overflow: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
+
+.pics_actmediumdiv
+{
+    height: 70%;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.pics_actlargediv
+{
+    height: 70%;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
 
 .text_activities
 {
@@ -2007,171 +1792,6 @@ input:focus
     font-family: "raleway-bold", Arial, Verdana, sans-serif;
 }
 
-
-/******************* Box 3 Photo 2 Mobile*******************/
-
-.article_act4
-{
-    height: 30em;
-    width: 95%;
-    border-radius: 40px;
-    margin: 0.9em;
-    padding: 0em;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 0px 0px 5px grey;
-}
-
-.pics4
-{
-    height: 70%;
-    width: 100%;
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
-    overflow: hidden;
-    overflow: cover;
-}
-
-/******************* Box 3 Photo 3 Mobile*******************/
-
-.article_act5
-{
-    height: 30em;
-    width: 95%;
-    border-radius: 40px;
-    margin: 0.9em;
-    padding: 0em;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 0px 0px 5px grey;
-}
-
-
-.pics5
-{
-    height: 70%;
-    width: 100%;
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
-    overflow: hidden;
-    overflow: cover;
-}
-
-/******************* Box 3 Photo 4 Mobile*******************/
-
-.article_act6
-{
-    height: 30em;
-    width: 95%;
-    border-radius: 40px;
-    margin: 0.9em;
-    padding: 0em;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 0px 0px 5px grey;
-}
-
-.pics6
-{
-    height: 70%;
-    width: 100%;
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
-    overflow: hidden;
-    overflow: cover;
-}
-
-
-
-/******************* Box 3 Photo 5 Mobile*******************/
-
-.article_act7
-{
-    height: 30em;
-    width: 95%;
-    border-radius: 40px;
-    margin: 0.9em;
-    padding: 0em;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 0px 0px 5px grey;
-}
-
-.pics7
-{
-    height: 70%;
-    width: 100%;
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
-    overflow: hidden;
-    overflow: cover;
-}
-
-/******************* Box 3 Photo 6 Mobile*******************/
-
-.article_act8
-{
-    height: 30em;
-    width: 95%;
-    border-radius: 40px;
-    margin: 0.9em;
-    padding: 0em;
-    background-color: white;
-    overflow: hidden;
-    box-shadow: 0px 0px 5px grey;
-}
-
-.pics8
-{
-    height: 70%;
-    width: 100%;
-    border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
-    overflow: hidden;
-    overflow: cover;
-}
-
-.activities_pics
-{
-    height: auto;
-    width:100%;
-
-    overflow: hidden;
-
-}
-
-.activities_pics2
-{
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-}
-
-.activities_pics3
-{
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-}
-
-.activities_pics4
-{
-    width: 100%;
-    min-width: 300%;
-
-}
-
-.activities_pics5
-{
-    width: 100%;
-    min-width: 100%;
-}
-
-.activities_pics6
-{
-    width: 100%;
-    min-width: 100%;
-}
 
 /***************************************** Footer Mobile opening *****************************************/
 
@@ -2281,6 +1901,5 @@ input:focus
     font-size: 1.2em;
     margin-bottom: 15px;
 }
-
-
 /***************************************** End of mobile responsive *****************************************/
+}

@@ -795,7 +795,6 @@ a
     flex-direction: column;
     margin-left: 20px;
     margin-right: 20px;
-
 }
     
 .surround_box:nth-child(1)                  /* CSS rule to invert 2 elements, here box 1 & 2*/
@@ -1154,7 +1153,6 @@ a
 @media only screen and (min-width: 480px) and (max-width: 1024px)
 {
 
-
 html, body, footer, header nav{ 
   margin:0;
   padding:0;
@@ -1345,7 +1343,6 @@ nav
 {
     display: block;
     border-radius: 30px;
-
     width: 3em;
     border-color: #F2F2F2;
     background-color: #0065FC;
@@ -1597,7 +1594,6 @@ input:focus
     padding-right: 6em;
     margin-bottom: 5em;
     align-items: center;
-
 }
 
 .box_popular
@@ -1612,7 +1608,6 @@ input:focus
     padding-bottom: 3em;
 }
 
-
 .h3_populary
 {
     display: flex;
@@ -1626,7 +1621,6 @@ input:focus
 {
     font-size: 1.4em;
 }
-
 
 .article_populary
 {
@@ -1648,7 +1642,6 @@ input:focus
     border-top-left-radius: 60px;
     border-bottom-left-radius: 60px;
 }
-
 
 .populary_text
 {

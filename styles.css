@@ -45,7 +45,6 @@ Par Stephane-OC
     margin: auto;
 }
 
-
 body
 {
     font-family: "Raleway-regular", Arial, Verdana, sans-serif; /* Font style off all the page*/
@@ -80,7 +79,6 @@ header a
 {
     display: flex;
 }
-
 
 .navrent
 {
@@ -132,8 +130,6 @@ header a
     font-family: 'raleway-extrabold';
 }
 
-
-
 /***************************************** End Header logo & navigation *****************************************/
 
 /* Title and research*/
@@ -143,7 +139,6 @@ header a
     display: flex;
     flex-direction: column;
 }
-
 
 #mainh1
 {
@@ -198,7 +193,6 @@ header a
     height: 50px; 
     border-radius: 20px 0 0 20px;
 }
-
 
 .input
 {
@@ -289,8 +283,6 @@ input:focus
     border-radius: 100%;
 }
 
-
-
 .action-button
 {
     display: flex;
@@ -372,7 +364,7 @@ input:focus
     padding-left: 3em
 }
 
-.box1
+.box_rent
 {
     border-radius: 20px;
     display: flex;
@@ -473,7 +465,7 @@ input:focus
 
 }
 
-.box2
+.box_popular
 {
     display: flex;
     flex-direction: column;
@@ -603,7 +595,7 @@ input:focus
 
 /******************* Box activities *******************/
 
-.box3
+.box_activity
 {
     height: 560px;
     width: 100%;
@@ -833,7 +825,7 @@ a
     margin-top: 40px;
 }
 
-.box1
+.box_rent
 {
     border-radius: 20px;
     display: flex;
@@ -883,7 +875,7 @@ a
     margin-bottom: 40px;
 }
 
-.box2
+.box_popular
 {
     display: flex;
     flex-wrap: wrap;
@@ -975,7 +967,7 @@ a
     border-radius: 20px; 
 }
 
-.box1
+.box_rent
 {
     border-radius: 20px;
     display: flex;
@@ -1050,7 +1042,7 @@ a
     overflow: hidden;
 }
 
-.box2
+.box_popular
 {
     display: flex;
     flex-wrap: wrap;
@@ -1127,7 +1119,7 @@ a
     border-bottom: 40px;
 }
 
-.box3
+.box_activity
 {
     height: 380px;
     width: auto;
@@ -1163,6 +1155,11 @@ a
 {
 
 
+html, body, footer, header nav{ 
+  margin:0;
+  padding:0;
+  min-width:480px
+}      
 /***************************************** Header, Mobile *****************************************/
 
 nav :nth-child(1)                  /* CSS rule to invert 2 elements, here box 1 & 2*/
@@ -1185,7 +1182,6 @@ nav :nth-child(4)
     order: 2;
 }
 
-
 header
 {
     font-family: 'raleway';
@@ -1201,7 +1197,6 @@ header a
 }
 
 /****** Nav have now the 3 buttons on 2 ligns ******/
-
 nav
 {
     width: 100%;
@@ -1224,7 +1219,6 @@ nav
 
 .navrent
 {
-
     font-family: "raleway-regular", Arial, Verdana, sans-serif;
     font-size: 2.4em;
     margin-right: 0em;
@@ -1240,8 +1234,6 @@ nav
     text-align: flex-start;
     font-family: "raleway-regular", Arial, Verdana, sans-serif;
     font-size: 2.4em;
-
-
     text-align: center;
     font-weight: bolder;
     border-bottom: 5px solid #F2F2F2;
@@ -1299,7 +1291,7 @@ nav
 #mainh2
 {
     font-family: "raleway-light", Arial, Verdana, sans-serif;
-    font-size: 1.6em;
+    font-size: 2.6em;
     margin: 15px 0px 20px 40px;
 }
 
@@ -1308,6 +1300,7 @@ nav
 {
     display: flex;
     justify-content: center;
+    margin-left: 8em;
 }
 
 .marker
@@ -1318,11 +1311,11 @@ nav
     justify-content: center;
     color: black; 
     align-items: center;
-    width: 110px;
+    width: 180px;
     min-width: 30px;
-    height: 120px; 
-    font-size: 2.8em;
-    border-radius: 30px 0 0 30px;
+    height: 150px; 
+    font-size: 3em;
+    border-radius: 40px 0 0 40px;
 }
 
 .input
@@ -1332,17 +1325,17 @@ nav
     border-bottom: solid #F2F2F2 2.4px;
     font-family: "raleway-Bold", Arial, Verdana, sans-serif;
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 2.4em;
     padding-left: 1em;
     padding-right: 1em;
-    width: 480px;
+    width: 580px;
 }
 
 ::placeholder
 {
     align-items: center;
     justify-content: center;
-    font-size: 1.8em;
+    font-size: 1.4em;
     color: black;
     opacity: 0.9;
     padding-left: -0.2em;
@@ -1351,8 +1344,8 @@ nav
 .searchicon
 {
     display: block;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-radius: 30px;
+
     width: 3em;
     border-color: #F2F2F2;
     background-color: #0065FC;
@@ -1447,6 +1440,11 @@ input:focus
     background-color: #F2F2F2;
 }
 
+.buttons_h2
+{
+    font-size: 2.6em;
+}
+
 .h5_symbol h5
  {
     display: flex;
@@ -1471,14 +1469,15 @@ input:focus
     align-items: center;
 }
 /***************************************** Container 1 Mobile *****************************************/
+
 .conteneur
 {
     display: flex;
     flex-direction: column;
     height: auto;
+    width: 100%;
     margin-left: 0px;
     margin-right: 0px;
-
 }
 
 .surround_box
@@ -1497,19 +1496,16 @@ input:focus
 {
     order: (1);
 }
-
-
-
 /***************************************** Hébergements, Mobile *****************************************/
 
-
-.box1
+.box_rent
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     height: auto;
     width: 100%;
+    margin-bottom: 40px;
 }
 
 .article_rent /* All my hébergement content are align in one line*/
@@ -1518,7 +1514,8 @@ input:focus
     width: 95%;/* To make my items take 95% width */
     background-color: white;
     box-shadow: 0px 0px 5px grey;
-    margin: 0.9em;
+    border-radius: 40px;
+    margin-left: 4em;
     padding: 0.6em;
     overflow: hidden;
 }
@@ -1528,8 +1525,8 @@ input:focus
     display: flex;
     height: 60%;
     width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
     overflow: hidden;
 }
 
@@ -1595,19 +1592,24 @@ input:focus
 {
     height: auto;
     width: 100%;
-    background-color: #F2F2F2;
+    background-color: #F2F2F2 cover;
+    padding-left: 4em;
+    padding-right: 6em;
+    margin-bottom: 5em;
+    align-items: center;
+
 }
 
-.box2
+.box_popular
 {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: auto;
     width: 100%;
-    margin: 0em;
-    padding-bottom: 1em;
+    margin-left: 0em;
+    padding-bottom: 3em;
 }
 
 
@@ -1629,14 +1631,24 @@ input:focus
 .article_populary
 {
     height: 24em;
-    width: 90%;
-    border-radius: 20px;
+    width: 95%;
+    border-radius: 60px;
     background-color: white;
     box-shadow: #F2F2F2;
     overflow: hidden;
     padding: 0.4em;
     margin: 0.9em;
 }
+
+.pics_populary
+{
+    height: 100%;
+    width: 100%; 
+    object-fit: cover;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+
 
 .populary_text
 {
@@ -1654,8 +1666,8 @@ input:focus
 .text_populary
 {
     display: flex;
-    font-size: 2.5em;
-    padding-right: 1.4em;
+    font-size: 2.8em;
+    padding-right: 1.5em;
     font-family: "Raleway-bold", Arial, Verdana, sans-serif;
 }
 
@@ -1669,7 +1681,7 @@ input:focus
 .text_populary3
 {
     display: flex;
-    font-size: 2.5em;
+    font-size: 2.8em;
     margin-right: 0em;
     font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
 }
@@ -1679,7 +1691,7 @@ input:focus
     display: flex;
     font-size: 2.5em;
     color: rgb(217,217,217);
-    padding-top: 1em;
+    margin-top: 1.4em;
 }
 
 /**************************************** Box activities Mobile ******************************************/
@@ -1692,33 +1704,37 @@ input:focus
 
 .surround_box3
 {
+
     height: auto;
     width: 100%;
+    padding-left: 4em;
 }
 
 /******************* Box activities *******************/
 
-.box3
+.box_activity
 {
     height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
 }
 
 .h3_activities
 {
     font-size: 3em;
     font-family: "Raleway-Extrabold", Arial, Verdana, sans-serif;
+    display: flex;
 }
 /******************* Box 3 Photo 3 Articles *******************/
 
 .article_actsmall
 {
     height: 30em;
-    width: 95%;/* To make my items take 95% width */
-    border-radius: 20px;
+    width: 100%;/* To make my items take 95% width */
+    border-radius: 40px;
     background-color: white;
     overflow: hidden;
     box-shadow: 0px 0px 5px grey;
@@ -1728,8 +1744,8 @@ input:focus
 .article_actmedium
 {
     height: 30em;
-    width: 95%;/* To make my items take 95% width */
-    border-radius: 20px;
+    width: 100%;/* To make my items take 95% width */
+    border-radius: 40px;
     background-color: white;
     overflow: hidden;
     box-shadow: 0px 0px 5px grey;
@@ -1739,8 +1755,8 @@ input:focus
 .article_actlarge
 {
     height: 30em;
-    width: 95%;/* To make my items take 95% width */
-    border-radius: 20px;
+    width: 100%;/* To make my items take 95% width */
+    border-radius: 40px;
     background-color: white;
     overflow: hidden;
     box-shadow: 0px 0px 5px grey;
@@ -1751,24 +1767,24 @@ input:focus
 {
     height: 70%;
     width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
 }
 
 .pics_actmediumdiv
 {
     height: 70%;
     width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
 }
 
 .pics_actlargediv
 {
     height: 70%;
     width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
 }
 
 
@@ -1804,8 +1820,8 @@ input:focus
     background-color:#F2F2F2; /* Background grey */
     color: black; /* Footer text black */
     text-decoration: none;
-    margin-right:0em;
-    padding-right:0em;
+    padding-left: 10em;
+
     background-position: cover;
     background-size: cover;
 }

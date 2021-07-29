@@ -38,13 +38,7 @@ Par Stephane-OC
     font-family: "Raleway-Bold"; 
     src: url("fonts/Raleway-Bold.ttf") format("truetype");                                                               
 }
-
-#bloc_page
-{
-    width: 900px;
-    margin: auto;
-}
-   
+ 
 
 body
 {
@@ -260,7 +254,6 @@ input:focus
     display: flex;
     align-items: center;
     margin: 20px 20px;
-    font-weight: 1.5em;
     font-family: 'raleway-bold', Arial, Verdana, sans-serif;
 }
 
@@ -434,13 +427,14 @@ input:focus
     height: 35%;
     width: 100%;
     margin-top: 0em;
+    line-height: 0.6em;
 }
 
 .rent_text
 {
     font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
     margin-left: 0.6em;
-    margin-top: 0.2em;
+    margin-top: 0.4em;
     font-size: 1.1em;
     font-weight: bolder;
 }
@@ -448,7 +442,7 @@ input:focus
 .rent_text2
 {
     margin-left: 0.6em;
-    margin-top: 0em;
+    margin-top: 1.3em;
 }
 
 .stars_rent
@@ -457,6 +451,7 @@ input:focus
     margin-bottom: 1em;
     margin-left: 0.6em;
     color: rgb(217,217,217);
+    margin-top: 1.4em;
 }
 
 .more
@@ -518,7 +513,6 @@ input:focus
     border-radius: 20px;
     box-shadow: 0px 0px 5px grey;
     background-color: white;
-    box-shadow: #F2F2F2;
     overflow: hidden;
     margin: 0.3em;
     padding: 0.3em;
@@ -556,11 +550,12 @@ input:focus
     vertical-align: top;
     height: 100%;
     width: 60%;
+    line-height: 1em;
 }
 
 .text_populary
 {
-    margin-top: 0.8em;
+    margin-top: 0.5em;
     margin-left: 0.6em;
     font-size: 1.1em;
     padding-right: 4em;
@@ -570,25 +565,26 @@ input:focus
 .text_populary2
 {
     margin-left: 0.6em;
+    margin-top: 1.6em;
     font-size: 1em;
     font-family: "Raleway-Regular", Arial, Verdana, sans-serif;
 }
 
 .text_populary3
 {
-    margin-top: 0.8em;
+    margin-top: 0.5em;
     margin-left: 0.6em;
     font-size: 1.1em;
-    padding-right: 1.2em;
+    margin-right: 0.8em;
     font-family: "Raleway-Extrabold", Arial, Verdana, sans-serif;
 }
 
 .stars2
 {
     margin-left: 0.6em;
+    margin-top: 2.4em;
     font-size: 1em;
     color: rgb(217,217,217);
-    padding-top: 1em;
 }
 /******************* Contener 2 with 1 box *******************/
 
@@ -632,7 +628,9 @@ input:focus
 
 .sub_activities1
 {
-    margin-left: 1em;
+    margin-top: 1em;
+    margin-left: 0.6em;
+    font-size: 0.9em;
     font-weight: bold;
     overflow: hidden;
 }
@@ -816,7 +814,7 @@ a
     
 .surround_box:nth-child(2)
 {
-    order: (1);
+    order: 1;
 }
 
 
@@ -857,7 +855,7 @@ a
 {
     font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
     margin-left: 1em;
-    margin-top: 0.2em;
+    margin-top: 0.4em;
     margin-right: 0.7em;
     font-size: 1em;
     font-weight: bolder;
@@ -865,7 +863,7 @@ a
 
 .rent_text2
 {
-    margin-top: -0.5em;
+    margin-top: 1em;
     font-size: 1em;
     margin-left: 1em;
     margin-right: 0.6em;
@@ -874,7 +872,7 @@ a
 .stars_rent
 {
     margin-left: 0.9em;
-    margin-top: 0em;
+    margin-top: 1.4em;
     color: rgb(217,217,217);
 }
 
@@ -906,7 +904,6 @@ a
     width: 30%;
     border-radius: 20px;
     background-color: white;
-    box-shadow: #F2F2F2;
     overflow: hidden;
 }
 
@@ -933,6 +930,7 @@ a
     font-size: 0.9em;
     margin-left: 0.4em;
     margin-top: 1.2em;
+    margin-right: 1.2em;
     font-weight: bold;
     font-family: "Raleway-bold", Arial, Verdana, sans-serif;
 }
@@ -941,6 +939,7 @@ a
 {
     margin-bottom: 5em;
     margin-left: 0.4em;
+    margin-top: 2.8em;
     font-size: 1em;
     color: rgb(217,217,217);
 }
@@ -986,7 +985,7 @@ a
 
 .surround_box:nth-child(2)
 {
-    order: (1);
+    order: 1;
 }
 
 .buttons_text
@@ -1037,16 +1036,15 @@ a
     font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
     font-size: 1em;
     margin-left: 0.8em;
-    margin-top: 0.1em;
+    margin-top: 0.3em;
     font-weight: bolder;
 }
 
 .rent_text2
 {
-    
     font-size: 0.9em;
     margin-left: 0.9em;
-    margin-top: -0.7em;
+    margin-top: 0.8em;
 }
 
 .stars_rent
@@ -1054,6 +1052,7 @@ a
     font-size: 0.8em;
     margin-left: 0.9em;
     color: rgb(217,217,217);
+    margin-top: 1.4em;
 }
 
 .more
@@ -1078,7 +1077,6 @@ a
     width: 30%;
     border-radius: 20px;
     background-color: white;
-    box-shadow: #F2F2F2;
     overflow: hidden;
 }
 
@@ -1115,14 +1113,13 @@ a
 {
     font-size: 0.9em;
     margin-left: 0em;
-    margin-right: -1.5em;
     margin-top: 0.4em;
     font-family: "Raleway-bold", Arial, Verdana, sans-serif;
 }
 
 .text_populary2
 {
-    font-size: 1em;
+    font-size: 0.9em;
     margin-left: 0em;
     font-family: "Raleway-Regular", Arial, Verdana, sans-serif;
 }
@@ -1141,7 +1138,7 @@ a
     font-size: 1em;
     color: rgb(217,217,217);
     margin-left: 0em;
-    margin-top: -0.6em;
+    margin-top: 2.4em;
 }
 /***************************************** Activities part touch pad*****************************************/
 
@@ -1220,7 +1217,7 @@ a
     font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
     font-size: 0.8em;
     margin-left: 0.8em;
-    margin-top: 0.1em;
+    margin-top: 0.4em;
     font-weight: bolder;
 }
 
@@ -1229,7 +1226,6 @@ a
     
     font-size: 0.8em;
     margin-left: 0.8em;
-    margin-top: -0.7em;
 }
 
 .stars_rent
@@ -1238,7 +1234,6 @@ a
     margin-left: 0.9em;
     color: rgb(217,217,217);
 }
-
 
 /***************************************** Populary 900px *****************************************/
 .surround_box2
@@ -1266,7 +1261,6 @@ a
 {
     font-size: 0.8em;
     margin-left: 0em;
-    margin-right: -1.5em;
     margin-top: 0.4em;
     font-family: "Raleway-bold", Arial, Verdana, sans-serif;
 }
@@ -1292,10 +1286,17 @@ a
     font-size: 0.8em;
     color: rgb(217,217,217);
     margin-left: 0em;
-    margin-top: 0em;
+    margin-top: 3em;
 }
 
-
+.sub_activities1
+{
+    margin-top: 0.8em;
+    margin-left: 0.6em;
+    font-size: 0.6em;
+    font-weight: bold;
+    overflow: hidden;
+}
     
 }
 
@@ -1342,7 +1343,6 @@ header a
 {
     text-decoration: none;
     color: black;
-
 }
 
 /****** Nav have now the 3 buttons on 2 ligns ******/
@@ -1360,9 +1360,6 @@ nav
     border-left: 0px;
     border-right: 0px;
 }
-
-
-
 
 .logo
 {
@@ -1390,7 +1387,6 @@ nav
 
 .navactivities
 {
-    text-align: flex-start;
     font-family: "raleway-regular", Arial, Verdana, sans-serif;
     font-size: 2.6em;
     text-align: center;
@@ -1505,7 +1501,6 @@ nav
     font-size: 1.4em;
     color: black;
     opacity: 0.9;
-    padding-left: -0.2em;
 }
 
 .searchicon
@@ -1546,7 +1541,6 @@ input:focus
     display: flex;
     flex-wrap: wrap;
     margin-left: 10px;
-    font-weight: 1.6em;
     font-family: 'raleway-bold', Arial, Verdana, sans-serif;
 }
 
@@ -1660,7 +1654,7 @@ input:focus
 
 .surround_box:nth-child(2)
 {
-    order: (1);
+    order: 1;
 }
 /***************************************** Hébergements, Mobile *****************************************/
 
@@ -1708,6 +1702,7 @@ input:focus
 {
     height: 40%;
     width: 100%;
+    line-height: 1.6em;
 }
 
 .rent_text
@@ -1715,20 +1710,20 @@ input:focus
     font-family: "Raleway-ExtraBold", Arial, Verdana, sans-serif;
     font-size: 2.5em;
     margin-left: 0.8em;
-    margin-top: 0.1em;
+    margin-top: 0.4em;
 }
 
 .rent_text2
 {
-    font-size: 2.3em;
+    font-size: 2.4em;
     margin-left: 0.9em;
-    margin-top: -0.8em;
+    margin-top: 0.1em;
 }
 
 .stars_rent
 {
     font-size: 2.2em;
-    margin-top: -0.5em;
+    margin-top: 0.5em;
     margin-left: 0.9em;
     color: rgb(217,217,217);
 }
@@ -1761,7 +1756,7 @@ input:focus
 {
     height: auto;
     width: 101%;
-    background-color: #F2F2F2 cover;
+    background-color: #F2F2F2;
     padding-left: 4em;
     padding-right: 6em;
     margin-bottom: 5em;
@@ -1800,7 +1795,6 @@ input:focus
     width: 95%;
     border-radius: 60px;
     background-color: white;
-    box-shadow: #F2F2F2;
     overflow: hidden;
     padding: 0.4em;
     margin: 0.9em;
@@ -1833,13 +1827,14 @@ input:focus
     display: flex;
     font-size: 2.8em;
     font-family: "Raleway-bold", Arial, Verdana, sans-serif;
+    line-height: 1em;
 }
 
 .text_populary2
 {
     display: flex;
-    font-size: 2.3em;
-    margin-top: 0em;
+    font-size: 2.6em;
+    margin-top: 1.8em;
     font-family: "Raleway-Regular", Arial, Verdana, sans-serif;
 }
 
@@ -1849,13 +1844,14 @@ input:focus
     font-size: 2.8em;
     margin-right: 0em;
     font-family: "Raleway-Bold", Arial, Verdana, sans-serif;
+    line-height: 1em;
 }
 
 .stars2
 {
     display: flex;
     font-size: 2.5em;
-    margin-top: 1em;
+    margin-top: 2.6em;
     color: rgb(217,217,217);
   
 }
@@ -1873,7 +1869,7 @@ input:focus
 
     height: auto;
     width: 100%;
-    padding-left: 4em;
+    padding-left: 4.6em;
 }
 
 /******************* Box activities *******************/
@@ -1987,7 +1983,6 @@ input:focus
     color: black; /* Footer text black */
     text-decoration: none;
     padding-left: 10em;
-    background-position: cover;
     background-size: cover;
 }
 

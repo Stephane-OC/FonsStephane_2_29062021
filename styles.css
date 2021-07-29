@@ -253,7 +253,7 @@ input:focus
 {
     display: flex;
     align-items: center;
-    margin: 20px 20px;
+    margin-left: 10px;
     font-family: 'raleway-bold', Arial, Verdana, sans-serif;
 }
 
@@ -817,6 +817,13 @@ a
     order: 1;
 }
 
+.filters
+{
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+    font-family: 'raleway-bold', Arial, Verdana, sans-serif;
+}
 
 /*********************************** Rent Part 1280 ***********************************/
 .text_rent
@@ -884,7 +891,7 @@ a
     width: 100%;
     background-color: #F2F2F2;
     border-radius: 20px; 
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .box_popular
@@ -971,6 +978,13 @@ a
 /******************** Responsive, touch pad Landscape ********************/
 @media all and (max-width: 1024px){
 
+
+.buttons_text
+{
+    margin-top: 1em;
+    margin-left: 0.3em;
+    font-size: 0.9em;
+}    
 /***************************************** Container 1 Tablette*****************************************/
 .conteneur
 {
@@ -988,13 +1002,13 @@ a
     order: 1;
 }
 
-.buttons_text
+.buttons_h2
 {
-    margin-top: 1em;
-    margin-left: 0.1em;
-    font-size: 0.9em;
-    text-align: center;
-    font-family: "raleway-bold", Arial, Verdana, sans-serif;
+    font-family: 'raleway-regular', Arial, Verdana, sans-serif;
+    font-size: 1.4em;
+    margin-left: 40px;
+    margin-top: 1.8em;
+    font-weight: bold;
 }
 /***************************************** Hébergements touch pad *****************************************/
 
@@ -1185,6 +1199,21 @@ a
 /***************************************** End of touch pad responsive *****************************************/
 @media screen and (max-width: 900px){
 
+.buttons_h2
+{
+    font-family: 'raleway-regular', Arial, Verdana, sans-serif;
+    font-size: 1.4em;
+    margin-left: 20px;
+    margin-top: 1.8em;
+    font-weight: bold;
+}
+
+.buttons_text
+{
+    margin-top: 1.4em;
+    margin-left: 0.3em;
+    font-size: 0.8em;
+}
 /***************************************** Rent 900px *****************************************/
 .surround_box
 {
@@ -1393,7 +1422,6 @@ nav
     font-weight: bolder;
     padding-bottom: 0.8em;
     border-bottom: 5px solid #F2F2F2;
-    margin: none;
     width: 46%;
 }
 
@@ -1542,6 +1570,7 @@ input:focus
     flex-wrap: wrap;
     margin-left: 10px;
     font-family: 'raleway-bold', Arial, Verdana, sans-serif;
+    width: 100%;
 }
 
 .buttons_h2
@@ -1549,6 +1578,7 @@ input:focus
     font-family: 'raleway-bold', Arial, Verdana, sans-serif;
     font-size: 1.6em;
     margin-top: 1.8em;
+    margin-right: 30em;
     font-weight: bold;
 }
 

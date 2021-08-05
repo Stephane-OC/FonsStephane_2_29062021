@@ -509,20 +509,20 @@ input:focus
 .populary_h3
 {
     justify-content: flex-start;
-    margin-left: 2em;
+    margin-left: 1.5em;
 }
 
 .h3_populary i 
 {
     font-size: 1.3em;
     justify-content: flex-end;
-    margin-right: 2em;
+    margin-right: 1.5em;
 }
 
 .article_populary
 {
     height: 24%;
-    width: 90%;
+    width: 82%;
     border-radius: 20px;
     box-shadow: 0px 2px 13px grey;
     background-color: white;
@@ -541,6 +541,7 @@ input:focus
 {
     height: 100%;
     width: 100%; 
+
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -571,7 +572,7 @@ input:focus
     margin-top: 0.5em;
     margin-left: 0.6em;
     font-size: 1.1em;
-    padding-right: 2.8em;
+    padding-right: 4em;
     font-family: "Raleway-Extrabold", Arial, Verdana, sans-serif;
 }
 
@@ -588,7 +589,7 @@ input:focus
     margin-top: 0.5em;
     margin-left: 0.6em;
     font-size: 1.1em;
-    margin-right: 0.6em;
+    margin-right: 2em;
     font-family: "Raleway-Extrabold", Arial, Verdana, sans-serif;
 }
 

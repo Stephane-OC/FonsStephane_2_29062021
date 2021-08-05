@@ -1491,7 +1491,8 @@ nav
 
 .navsubscribe a:hover 
 {
-    font-family: 'raleway-extrabold' #0065FC;
+    font-family: 'raleway-extrabold';
+    color: #0065FC;
 }
 
 .blue

@@ -38,7 +38,27 @@ Par Stephane-OC
     font-family: "Raleway-Bold"; 
     src: url("fonts/Raleway-Bold.ttf") format("truetype");                                                               
 }
- 
+
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('font-awesome-4.7.0//fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 body
 {

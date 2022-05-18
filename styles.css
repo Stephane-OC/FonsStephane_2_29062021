@@ -435,13 +435,13 @@ input:focus
 {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 
 .pics_rentcontain
 {
-    display: flex;
-    height: 63%;
+    height: 100%;
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
